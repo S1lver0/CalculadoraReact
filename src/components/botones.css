@@ -1,0 +1,16 @@
+.botonN{
+    font-size: 30px;
+    width: 25%;
+    height: 100%;
+}
+
+.boton0{
+    background-color: orange;
+    font-size: 30px;
+    width: 25%;
+    height: 100%;
+}
+
+#cero{
+    width: 50%;
+}
