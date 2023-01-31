@@ -1,7 +1,9 @@
-import "./screen.css"
+import "./screen.css";
+import React, { useContext } from "react";
+import { screenContext } from "../context/screenContext";
 
-export const Screen = ({ valor }) => {
-  return (
-    <div className="pantalla">{valor}</div>
-  );
+export const Screen = () => {
+  const screen = useContext(screenContext);
+
+  return <div className="pantalla">{screen.num}</div>;
 };

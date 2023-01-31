@@ -1,20 +1,14 @@
-import React, {useState} from 'react';
-import './App.css';
-import { Panelbotones } from './components/panelBotones';
-import { Screen } from './components/screen';
+import React, { useState } from "react";
+import "./App.css";
+import { Panelbotones } from "./components/panelBotones";
+import { Screen } from "./components/screen";
+import { ScreenContextProvider } from "./context/screenContext";
 
 export const App = () => {
-
-  const [num,setNum] = useState(0);
-
-
-
   return (
-    <div className="App">
-      <Screen valor={num}/>
-      <Panelbotones/>
-    </div>
+    <ScreenContextProvider>
+      <Screen/>
+      <Panelbotones />
+    </ScreenContextProvider>
   );
-}
-
-
+};
